@@ -1,0 +1,14 @@
+[2025-08-29 01:40:15]
+String X: abc
+String Y: bcd
+Minimum Penalty: 4
+Aligned X: abc-
+Aligned Y: -bcd
+-----------------------------------
+[2025-08-29 01:40:28]
+String X: ac
+String Y: bc
+Minimum Penalty: 0
+Aligned X: ac
+Aligned Y: bc
+-----------------------------------
