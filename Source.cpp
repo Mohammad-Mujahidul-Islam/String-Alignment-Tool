@@ -45,6 +45,9 @@ void saveHistory(const string &X, const string &Y, int penalty, const string &al
 }
 
 void showHistory() {
+    
+    if (!checkPassword())
+        return;
     ifstream file(HISTORY_FILE);
     if (file.is_open()) {
         string line;
@@ -160,7 +163,6 @@ bool checkPassword() {
 // ------------------- Main -------------------
 
 int main() {
-    if (!checkPassword()) return 0; // exit if wrong password
 
     while (true) {
         cout << "\n--- Menu ---\n";
@@ -181,3 +183,4 @@ int main() {
         }
     }
 }
+
